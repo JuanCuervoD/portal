@@ -84,13 +84,14 @@ section h2 {
     color: #007BFF;
 }
 
-article:not(.grid-container article) {
+article:not(.grid-container article), 
+article:not(.grid-bases article),
+article:not(.about-us-aside article) {
     border: 1px solid #ddd;
     padding: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     background-color: #fff;
-    border-radius: 10px;    
-    text-align: center;
+    border-radius: 10px;        
 }
 
 /* Estilos para centrar imágenes y texto en el carrusel */
@@ -159,7 +160,10 @@ article:not(.grid-container article) {
 #recursos{
     flex: 2;
 }
-
+#about-us{
+    text-align: none;
+    display: flexbox;
+}
 #link{
     color: #007BFF;
 }
@@ -181,6 +185,23 @@ i.fas {
     padding: 20px;
 }
 
+.grid-bases {
+    display: flex;    
+    column-gap: 10px;
+    padding: 20px;
+}
+.grid-bases article{
+    border: 1px solid #ddd;
+    padding: 10px;    
+    background-color: #fff;
+    border-radius: 10px;    
+    text-align: center;
+    margin-bottom: 60px;    
+}
+
+.grid-bases article a{
+    text-decoration: none; /* Elimina subrayado de los enlaces */
+}
 .grid-container article{
     border: 1px solid #ddd;
     padding: 10px;    
@@ -189,13 +210,16 @@ i.fas {
     text-align: center;
     margin-bottom: 60px;
 }
-
+.grid-container article a{
+    text-decoration: none; /* Elimina subrayado de los enlaces */
+}
 article img {
     max-width: 100%; /* Ajusta el tamaño máximo de la imagen */
     border-radius: 5px;
     height: 110px;
 
 }
+
 
 .image-link {
     position: relative;
@@ -210,9 +234,13 @@ article img {
     opacity: 0.85;
     border-radius: 20px;
 }
+.image-text2 {
+    position: relative;    
+    color: #000;
+    padding: 5px;    
+}
 
-
-aside{
+aside:not(.about-us-aside){
     background-color: #e4e2e2;
     display: flex;
     justify-content: space-around;
@@ -223,6 +251,21 @@ aside{
     text-align: center; 
 }
 
+
+.about-us-aside{
+    background-color: #e4e2e2;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 20px;
+    margin-bottom: 1%;  
+}
+.grid-about {
+    display: inline-flexbox;    
+    column-gap: 10px;
+    padding: 20px;
+}
 footer {
     background-color: #f5f5f5;
     color: #000;
