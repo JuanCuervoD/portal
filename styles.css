@@ -3,7 +3,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url(images/fondo.jpg);
+    background-color: #5aa9ff;}
+    /*background-image: url(images/fondo.jpg);
 }
 
 /* Estilos para el header */

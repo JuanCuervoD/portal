@@ -63,7 +63,7 @@ input {
     font-size: large;
 }
 
-button {
+#boton-inicio {
     background-color: #007BFF;
     color: #fff;
     padding: 10px 20px;
@@ -71,11 +71,10 @@ button {
     border-radius: 4px;
     cursor: pointer;    
     font-size: large;
-    margin-left: 40%;
-    margin-top: 3em;
-    
+    margin: 1em 50% auto 40%;
+    text-decoration: none;   
 }
 
-button:hover {
+#boton-inicio:hover {
     background-color: #0056b3;
 }
